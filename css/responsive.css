@@ -1,0 +1,105 @@
+/* PC */
+@media (min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .menu-button {
+        display: block;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > .responsive-login {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;
+    }
+
+    #nav .subnav a {
+        background-color: rgb(31, 31, 31);
+        color: aliceblue;
+        line-height: 50px;
+    }
+
+    #content .member-item {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #content .member-name {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #content .member-img {
+        width: 70%;
+    }
+
+    .places-item {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .places-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-content {
+        font-size: 20px;
+        line-height: 1.9;
+    }
+    
+    .form-connect {
+        margin-top: 30px;
+    }
+
+    .contact-input-email {
+        margin-top: 9px;
+    }
+
+    .contact-input-mess {
+        margin-top: 9px;
+    }
+
+    .col-full-contact {
+        width: 100%;
+    }
+
+    .contact-button .contact-form {
+        padding: 10px 15px;
+        font-size: 17px;
+    }
+
+    .contact-submit {
+        padding: 13px 27px;
+        margin-bottom: 10px;
+        font-size: 17px;
+        width: 100%;
+        position: initial;
+    }
+    
+    .responsive-contact {
+        min-height: 500px;
+    }
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhat Nguyen</title>
+    <link rel="icon" href="./assets/img/iconlogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- link css bên dưới để ưu tiên hơn dòng trên -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+
+    <!-- Login Modal -->
+    <div class="modal-login js-modal">
+        <div class="modal-container">
+            <!-- Header-Modal -->
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <div class="modal-header">
+                <i class="ti-user"></i>
+                Login
+            </div>
+
+            <div>
+                <p class="header-question">Doesn't have an account yet? <a href="#" class="modal-signup">Sign up</a></p>
+            </div>
+            <!-- Body-Modal -->
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="ti-email"></i>
+                    Email Address
+                </label>
+                <input class="modal-input" type="email" placeholder="User Name">
+
+                <label for="" class="modal-label">
+                    <i class="ti-key"></i>
+                    Password
+                </label>
+                <input class="modal-input" type="text" placeholder="Enter 6 characters or more">
+            </div>
+            <!-- Remember -->
+            <div class="remember">
+                <input class="checkbox" type="checkbox">
+                Remember me
+            </div>
+            <!-- Button login -->
+            <div id="button-login">
+                <button class="button-login">Login</button>
+            </div> 
+            <!-- Tag GG or FB -->
+            <div class="modal-google">
+                <i class="ti-google"></i>
+                <span class="logo-google">Google</span>
+            </div>
+
+            <div class="modal-facebook">
+                <i class="ti-facebook"></i>
+                Facebook
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Home page -->
+    
+    <div id="main">
+        <div id="header">
+            <!-- begin navigation -->
+            <ul id="nav">
+                <li class="js-modal-login responsive-login">
+                    <a href="#" id="show-button-login">Login</a>
+                </li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#connect">Connect</a></li>
+                <li>
+                    <a href="#">
+                        Genre
+                        <i class="ti-angle-down nav-arrow-down" id="js-listsubnav"></i>
+                    </a>
+                    <ul class="subnav" id="js-subnav">
+                        <li><a href="">Acoustic</a></li>
+                        <li><a href="">Lofi</a></li>
+                        <li><a href="">Pop</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- end navigation -->
+
+            <!-- begin search button -->
+            <div class="search-button search-icon">
+                <i class="ti-search"></i>
+            </div>
+
+            <!-- Menu mobile button -->
+            <div id="js-mobile-menu" class="menu-button menu-icon">
+                <i class="ti-menu"></i>
+            </div>
+        </div>
+
+        <div id="slider">
+            <div class="text-slider">
+                <div class="text-title01"><h2>NEW YORK</h2></div>
+                <div class="text-content01">The Vancouver Music Strategy</div>         
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- Band section -->
+            <div id="band" class="content-section">
+                <h2 class="section-heading">THE BAND</h2>
+                <p class="section-sub-heading">We Love Music</p>
+                <div class="about-text">
+                    <p>The Vancouver Music Strategy supports music and musicians working and living here by addressing gaps and opportunities in our city’s music ecosystem and embracing Vancouver’s vibrant and diverse music communities.</p>
+                    <p>The framework for action, approved by Council in September 2019 as part of Culture|Shift, includes strengthening collaboration between government, community, and industry, engaging audiences, generating economic growth, promoting music tourism and education, and removing municipal barriers, to create a dynamic, sustainable, and resilient music sector for generations to come. </p>
+                    <p>The Vancouver Music Strategy development has been guided by the Vancouver Music Strategy Steering Committee and Advisory Committee, who have examined the strengths, weaknesses, and gaps that exist within Vancouver’s music ecosystem.</p>
+                </div>  
+
+                <!--List of members -->
+                <div class="list-members">
+                    <div class="member-item">
+                        <p class="member-name">Kurt Cobain</p>
+                        <img src="./assets/img/singer01.jpg" alt="Error 404" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">Chris Cornell</p>
+                        <img src="./assets/img/singer03.jpg" alt="Error 404" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name"> John Lennon</p>
+                        <img src="./assets/img/singer02.jpg" alt="Error 404" class="member-img">
+                    </div>
+                    <!-- clear nhằm giải quyết vấn đề float -->
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <!-- Tour section -->
+            <!-- Dùng div tour-section để đổ background cho width 100% -->
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2  class="section-heading" style="color: #fff;">TOUR DATES</h2>
+                    <p class="section-sub-heading" style="color: #999898;">Remember to book your tickets</p>
+                    <ul class="list-tickets">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out" style="margin-left: 20.4px;">Sold out</span></li>
+                        <li>November <span class="in-stock">In Stock</span></li>
+                    </ul>
+
+                    <!-- Places -->
+                    <div class="list-places">
+                        <!-- List 01 -->
+                        <div class="places-item">
+                            <img class="places-img" src="./assets/img/newyork.jpg" alt="Error 404" >
+                            <div class="places-content">
+                                <h3 class="places-heading">New York</h3>
+                                <p class="places-time">Fri 27 Nov 2023</p>
+                                <p class="places-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="#" class="places-button">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <!-- List 02 -->
+                        <div class="places-item">
+                            <img class="places-img" src="./assets/img/paris.jpg" alt="Error 404" >
+                            <div class="places-content">
+                                <h3 class="places-heading">Paris</h3>
+                                <p class="places-time">Sat 28 Nov 2023</p>
+                                <p class="places-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="#" class="places-button">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <!-- List 03 -->
+                        <div class="places-item">
+                            <img class="places-img" src="./assets/img/sanfran.jpg" alt="Error 404" >
+                            <div class="places-content">
+                                <h3 class="places-heading">San Francisco</h3>
+                                <p class="places-time">Sun 29 Nov 2023</p>
+                                <p class="places-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="#" class="places-button">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact section -->
+            <div id="connect" class="content-section responsive-contact">
+                <h2 class="section-heading">CONNECT</h2>
+                <p class="section-sub-heading">Connect with me!</p>
+
+                <div class="row contact-section">
+                    <div class="colum contact-content col-full-contact">
+                        <p><i class="ti-location-pin"></i>Hoai Nhon, Binh Dinh</p>
+                        <p><i class="ti-facebook"></i><a href="https://www.facebook.com/le.nhat.2005?locale=vi_VN">facebook.com/le.nhat.2005</a></p>
+                        <p><i class="ti-email"></i>nguyenlenhat205@gmail.com</p>
+                    </div>
+
+                    <div class="colum contact-button col-full-contact">
+                        <form class="form-connect" action="">
+                            <div class="row">
+                                <div class="colum contact-input-text col-full-contact">
+                                    <input type="text" placeholder="Name" class="contact-form">
+                                </div>
+                                <div class="colum contact-input-email col-full-contact">
+                                    <input type="email" placeholder="Email" class="contact-form">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row contact-input-mess">
+                                <div class="colum col-full">
+                                    <input type="text" placeholder="Message" class="contact-form">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <input type="submit" value="Send" class="contact-submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <div id="footer">
+            
+        </div>
+    </div>
+
+    <!-- ! Java Script -->
+    <!-- Script modal login -->
+    <script>
+        const ModalLogin = document.querySelectorAll(".js-modal-login")
+        const modal = document.querySelector ('.js-modal')
+
+        function showModelLogin() {
+            modal.classList.add('open')
+        }
+
+        for (const showLogin of ModalLogin) {
+            showLogin.addEventListener('click', showModelLogin)
+        }
+    </script>
+    
+    <script>
+         const closeModal = document.querySelector ('.js-modal-close')
+         function hideModelLogin() {
+            modal.classList.remove('open')
+        }
+        closeModal.addEventListener('click', hideModelLogin)
+    </script>
+
+    <!-- Script menu mobile -->
+    <script>
+        // gọi id header cho biến header
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('js-mobile-menu');
+        // gán giá trị của header.clientHeight cho headerMobile
+        var headerMobile = header.clientHeight;
+
+        mobileMenu.onclick = function() {
+            // so sánh giá trị của headerMobile với header.clientHeight
+            var isClosed = header.clientHeight === headerMobile;
+            if (isClosed) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+
+        // tự động đóng menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function() {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (!isParentMenu) {
+                    header.style.height = null;
+                }
+                else {
+                    event.preventDefault();
+                }
+                
+            }
+        }
+    </script>
+    
+</body>
+</html>
